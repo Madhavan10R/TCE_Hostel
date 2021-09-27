@@ -1,0 +1,65 @@
+<!Doctype html>
+<html ng-app = 'eventApp'>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="eventapp.js"></script>
+    
+    <link rel="stylesheet" href="complaint.css">
+<head >
+   
+  
+
+    <div class="c1">
+          <link rel="stylesheet" href="main.css">
+        
+    </head>
+    <body>
+        <header>
+            <img src="logo.png">
+            <h2>TCE Hostel</h2>
+        </header>
+    </div>
+    
+
+
+</head>
+<body>
+    <div id="nav1">
+            <span onclick="openNav()">&#9776;</span>
+    </div>
+    <div class="a1">
+    <div class="a0">
+        <h4>Complaint Box</h4>
+    </div><br>
+
+
+        <div style="color:#191919">
+        <form  >
+            <label><b> Name:</b></label><br>
+            <input type ="text" ><br>
+
+            <label style="float: center;"><b>Register Number:</b></label><br>
+            <input type ="text" ><br>
+            <label style="float: center;"><b>Complaint:</b></label><br>
+            <div ng-controller = 'eventController'>
+            <textarea ng-keypress="key()" cols="30" rows="5">
+            </textarea > <br>({{kp2}} words only allowed)
+            {{msg}}
+        </div>
+            
+            
+            
+            <div id="charcount_text"></div>
+    <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Home</a>
+                <a href="#">Logout</a>
+                <a href="attendance.html">Attendance</a>
+            </div>
+           
+            
+
+            <button class="b1"onclick=""><b>Submit</b></button>
+        </form>
+    </div>
+</body>
